@@ -4,7 +4,7 @@ import ImageSlot from '../components/ImageSlot.jsx'
 import Reveal, { useInView } from '../components/Reveal.jsx'
 import { Condensation, SlideTag, WaterDrop } from '../components/Decor.jsx'
 
-const CHANNELS = ['glacé official website', 'Shopee', 'Lazada', 'Sephora online', 'Guardian and Watsons online']
+const CHANNELS = ['glacé official website', 'Lazada', 'Sephora online', 'Guardian and Watsons online']
 const KEYWORDS = ['Cooling moisturiser', 'Lightweight moisturiser', 'Moisturiser for humid weather', 'Non-sticky moisturiser', 'SPF moisturiser']
 
 /* Canva page 10 — two large rounded image panels on top, heading and content below. */
