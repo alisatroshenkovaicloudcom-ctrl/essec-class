@@ -18,7 +18,7 @@ export default function S03Benchmark() {
       <div className="relative mx-auto grid max-w-[1400px] gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
         <div className="lg:sticky lg:top-32 lg:self-start">
           <Reveal>
-            <SlideTag n={3}>Competitive landscape</SlideTag>
+            <SlideTag id="benchmark">Competitive landscape</SlideTag>
           </Reveal>
           <Reveal delay={100} as="h2" className="display mt-8 text-[clamp(52px,6.4vw,104px)]">
             Our Benchmark <em className="italic text-steel">Set</em>

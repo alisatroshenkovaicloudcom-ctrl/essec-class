@@ -20,7 +20,7 @@ export default function S06Assets() {
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <Reveal>
-              <SlideTag n={6}>Brand identity</SlideTag>
+              <SlideTag id="assets">Brand identity</SlideTag>
             </Reveal>
             <Reveal delay={100} as="h2" className="display mt-8 text-[clamp(48px,6.4vw,104px)]">
               Key Distinctive

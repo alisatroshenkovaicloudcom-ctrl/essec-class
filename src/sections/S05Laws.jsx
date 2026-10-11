@@ -28,7 +28,7 @@ export default function S05Laws() {
     <section id="laws" className="relative grid min-h-[100svh] bg-frost lg:grid-cols-[1.15fr_0.85fr]">
       <div className="px-5 py-24 sm:px-10 lg:px-16 lg:py-32 xl:px-24">
         <Reveal>
-          <SlideTag n={5}>The 3 laws of marketing</SlideTag>
+          <SlideTag id="laws">The 3 laws of marketing</SlideTag>
         </Reveal>
         <Reveal delay={100} as="h2" className="display mt-8 text-[clamp(48px,6vw,96px)]">
           Key Learnings

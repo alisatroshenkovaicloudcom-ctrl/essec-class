@@ -22,7 +22,7 @@ export default function S02Brand() {
         <Snowflake className="absolute -right-10 top-[38%] w-44 text-white/70" />
 
         <Reveal>
-          <SlideTag n={2}>Why we’re launching glacé</SlideTag>
+          <SlideTag id="brand">Why we’re launching glacé</SlideTag>
         </Reveal>
         <Reveal delay={100} as="h2" className="display mt-8 text-[clamp(44px,5.6vw,84px)]">
           Introducing glacé: <em className="font-display italic text-steel">Made for Singapore’s Climate</em>

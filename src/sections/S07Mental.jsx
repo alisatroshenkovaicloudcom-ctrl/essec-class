@@ -33,7 +33,7 @@ export default function S07Mental() {
       <div className="relative mx-auto grid max-w-[1440px] gap-12 lg:grid-cols-[1fr_0.9fr_1.1fr] lg:gap-14">
         <div className="lg:pt-6">
           <Reveal>
-            <SlideTag n={7}>Mental availability</SlideTag>
+            <SlideTag id="mental">Mental availability</SlideTag>
           </Reveal>
           <Reveal delay={100} as="h2" className="display mt-8 text-[clamp(48px,5.4vw,88px)]">
             When Consumers <em className="italic text-steel">Think of glacé</em>

@@ -36,7 +36,7 @@ export default function S11Launch() {
       <div className="relative mx-auto max-w-[1440px]">
         <div className="text-center">
           <Reveal className="flex justify-center">
-            <SlideTag n={11}>Launch strategy</SlideTag>
+            <SlideTag id="launch">Launch strategy</SlideTag>
           </Reveal>
           <Reveal delay={100} as="h2" className="display mx-auto mt-8 text-[clamp(52px,7vw,116px)]">
             From Launch <em className="italic text-steel">to Growth</em>

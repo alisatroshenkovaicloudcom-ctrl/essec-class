@@ -1,4 +1,4 @@
-// The 12 sections, in the order of the Canva slides.
+// The sections, in the order of the Canva slides.
 // `nav` marks the sections that appear in the top menu.
 export const SECTIONS = [
   { id: 'home', title: 'Cover', nav: 'Home' },
@@ -6,6 +6,7 @@ export const SECTIONS = [
   { id: 'benchmark', title: 'Our benchmark set' },
   { id: 'growth', title: 'How glacé will grow' },
   { id: 'laws', title: 'The 3 laws of marketing', nav: 'The 3 Laws' },
+  { id: 'duplication', title: 'Duplication of Purchase' },
   { id: 'assets', title: 'Distinctive brand assets' },
   { id: 'mental', title: 'Mental availability', nav: 'Mental Availability' },
   { id: 'physical', title: 'Physical availability', nav: 'Physical Availability' },

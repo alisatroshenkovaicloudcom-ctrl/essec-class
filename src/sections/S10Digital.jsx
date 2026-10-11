@@ -29,7 +29,7 @@ export default function S10Digital() {
         <div className="mt-20 grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
           <div>
             <Reveal>
-              <SlideTag n={10}>Digital availability</SlideTag>
+              <SlideTag id="digital">Digital availability</SlideTag>
             </Reveal>
             <Reveal delay={100} as="h2" className="display mt-8 text-[clamp(52px,6.4vw,104px)]">
               glacé, <em className="italic text-steel">Wherever You Shop.</em>

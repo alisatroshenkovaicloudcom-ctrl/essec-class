@@ -19,7 +19,7 @@ export default function S08Physical() {
       <div className="relative mx-auto grid max-w-[1440px] gap-12 lg:grid-cols-[1fr_0.85fr_1.15fr] lg:gap-14">
         <div className="lg:pt-6">
           <Reveal>
-            <SlideTag n={8}>Physical availability</SlideTag>
+            <SlideTag id="physical">Physical availability</SlideTag>
           </Reveal>
           <Reveal delay={100} as="h2" className="display mt-8 text-[clamp(52px,5.8vw,96px)]">
             Easy to Find.

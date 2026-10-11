@@ -38,7 +38,7 @@ export default function S09Portfolio() {
       <div className="relative mx-auto grid max-w-[1440px] gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
         <div>
           <Reveal>
-            <SlideTag n={9}>Product portfolio</SlideTag>
+            <SlideTag id="portfolio">Product portfolio</SlideTag>
           </Reveal>
           <Reveal delay={100} as="h2" className="display mt-8 text-[clamp(56px,6.8vw,112px)]">
             One Formula.

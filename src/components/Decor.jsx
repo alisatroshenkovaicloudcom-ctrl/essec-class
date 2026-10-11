@@ -1,4 +1,5 @@
 /* Ice, water and condensation ornaments shared by every section. */
+import { SECTIONS } from '../data/sections.js'
 
 /** Pale blue water-drop shape (used as icon and as large background ornament). */
 export function WaterDrop({ className = '', filled = false, strokeWidth = 1.2 }) {
@@ -107,8 +108,9 @@ export function Caustics({ className = '', opacity = 0.35, id = 'caustics', spee
   )
 }
 
-/** Slide index label: "03 — Our benchmark set". */
-export function SlideTag({ n, children, light = false, className = '' }) {
+/** Slide index label: "03 — Our benchmark set". The number follows the section order. */
+export function SlideTag({ id, children, light = false, className = '' }) {
+  const n = SECTIONS.findIndex((s) => s.id === id) + 1
   return (
     <div className={`flex items-center gap-4 ${className}`}>
       <span className={`font-display text-[15px] italic ${light ? 'text-frost/80' : 'text-steel'}`}>{String(n).padStart(2, '0')}</span>

@@ -17,6 +17,7 @@ import heroBottle from '../assets/images/glace-hero-bottle.jpg'
 import singapore from '../assets/images/singapore-marina-bay.jpg'
 import iceCube from '../assets/images/glace-ice-cube.jpg'
 import capCloseup from '../assets/images/glace-cap-closeup.jpg'
+import iceCubes from '../assets/images/glace-ice-cubes.jpg'
 
 export const images = {
   // Page 1 — cover: the ice-cube bottle on ice
@@ -30,6 +31,8 @@ export const images = {
   'competitor-laneige': null,
   // Page 5 — ice cube in water
   'glace-ice-photo': iceCube,
+  // Duplication of Purchase slide — pile of ice cubes
+  'glace-law-duplication': iceCubes,
   // Page 6 — distinctive brand assets
   'glace-wordmark': null, // optional logo image; until set, the wordmark is drawn in type
   'glace-asset-ice-cube': capCloseup,

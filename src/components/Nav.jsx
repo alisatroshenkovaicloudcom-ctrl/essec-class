@@ -97,7 +97,7 @@ export default function Nav() {
 
           <div className="flex items-center gap-5">
             <span className="hidden font-display text-[17px] italic text-steel sm:inline" aria-live="polite">
-              {String(activeIndex + 1).padStart(2, '0')} <span className="text-steel/50">/ 12</span>
+              {String(activeIndex + 1).padStart(2, '0')} <span className="text-steel/50">/ {SECTIONS.length}</span>
             </span>
             <button
               onClick={() => setOpen((o) => !o)}
@@ -139,7 +139,7 @@ export default function Nav() {
         <p className="label mt-auto">Stay icy.</p>
       </div>
 
-      {/* Slide dots — all 12 sections, for the live presentation */}
+      {/* Slide dots — every section, for the live presentation */}
       <nav aria-label="Slides" className="fixed right-4 top-1/2 z-30 hidden -translate-y-1/2 lg:block">
         <ul className="flex flex-col items-end gap-3">
           {SECTIONS.map((s, i) => (
