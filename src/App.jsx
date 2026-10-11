@@ -4,6 +4,8 @@ import S02Brand from './sections/S02Brand.jsx'
 import S03Benchmark from './sections/S03Benchmark.jsx'
 import S04Transition from './sections/S04Transition.jsx'
 import S05Laws from './sections/S05Laws.jsx'
+import S05aDoubleJeopardy from './sections/S05aDoubleJeopardy.jsx'
+import S05bHeavyBuyer from './sections/S05bHeavyBuyer.jsx'
 import S05cDuplication from './sections/S05cDuplication.jsx'
 import S06Assets from './sections/S06Assets.jsx'
 import S07Mental from './sections/S07Mental.jsx'
@@ -27,6 +29,8 @@ export default function App() {
         <S03Benchmark />
         <S04Transition />
         <S05Laws />
+        <S05aDoubleJeopardy />
+        <S05bHeavyBuyer />
         <S05cDuplication />
         <S06Assets />
         <S07Mental />

@@ -6,6 +6,8 @@ export const SECTIONS = [
   { id: 'benchmark', title: 'Our benchmark set' },
   { id: 'growth', title: 'How glacé will grow' },
   { id: 'laws', title: 'The 3 laws of marketing', nav: 'The 3 Laws' },
+  { id: 'double-jeopardy', title: 'Double Jeopardy' },
+  { id: 'heavy-buyer', title: 'Heavy Buyer Fallacy' },
   { id: 'duplication', title: 'Duplication of Purchase' },
   { id: 'assets', title: 'Distinctive brand assets' },
   { id: 'mental', title: 'Mental availability', nav: 'Mental Availability' },

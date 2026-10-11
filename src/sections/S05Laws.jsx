@@ -1,21 +1,25 @@
 import { useState } from 'react'
 import ImageSlot from '../components/ImageSlot.jsx'
 import Reveal from '../components/Reveal.jsx'
+import { scrollToSection } from '../data/sections.js'
 import { Condensation, SlideTag } from '../components/Decor.jsx'
 
 const LAWS = [
   {
     title: 'Double Jeopardy',
+    section: 'double-jeopardy',
     law: 'Smaller brands generally have fewer buyers and slightly lower purchase frequency.',
     implication: 'For glacé, the priority is to attract more customers rather than relying only on loyal users.',
   },
   {
     title: 'Heavy Buyer Fallacy',
+    section: 'heavy-buyer',
     law: 'Heavy buyers are not always consistently heavy buyers.',
     implication: 'glacé should reach occasional skincare buyers and new customers rather than focusing exclusively on frequent users.',
   },
   {
     title: 'Duplication of Purchase',
+    section: 'duplication',
     law: 'Consumers purchase multiple moisturiser brands.',
     implication: 'Our goal is to become one of the brands consumers regularly consider, not necessarily the only one they buy.',
   },
@@ -65,6 +69,9 @@ export default function S05Laws() {
                     <div className="mb-8 ml-0 rounded-[22px] bg-powder/70 p-6 sm:ml-[124px]">
                       <p className="label">What it means for glacé</p>
                       <p className="mt-3 font-display text-[24px] leading-snug text-deep">{l.implication}</p>
+                      <button onClick={() => scrollToSection(l.section)} className="mt-4 font-sans text-[12px] font-medium uppercase tracking-[0.24em] text-steel underline-offset-4 hover:text-deep hover:underline">
+                        Explore this law →
+                      </button>
                     </div>
                   </div>
                 </div>

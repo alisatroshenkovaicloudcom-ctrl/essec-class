@@ -18,19 +18,26 @@ import singapore from '../assets/images/singapore-marina-bay.jpg'
 import iceCube from '../assets/images/glace-ice-cube.jpg'
 import capCloseup from '../assets/images/glace-cap-closeup.jpg'
 import iceCubes from '../assets/images/glace-ice-cubes.jpg'
+import evereden from '../assets/images/competitor-evereden.png'
+import suuBalm from '../assets/images/competitor-suu-balm.png'
+import cerave from '../assets/images/competitor-cerave.png'
+import laneige from '../assets/images/competitor-laneige.png'
 
 export const images = {
   // Page 1 — cover: the ice-cube bottle on ice
   'glace-hero-image': heroBottle,
   // Page 2 — Marina Bay skyline
   'singapore-skyline': singapore,
-  // Page 3 — competitor product shots (add your Canva exports)
-  'competitor-evereden': null,
-  'competitor-suu-balm': null,
-  'competitor-eucerin': null,
-  'competitor-laneige': null,
+  // Page 3 — competitor product cut-outs (transparent PNGs from the Canva slide)
+  'competitor-evereden': evereden,
+  'competitor-suu-balm': suuBalm,
+  'competitor-cerave': cerave,
+  'competitor-laneige': laneige,
   // Page 5 — ice cube in water
   'glace-ice-photo': iceCube,
+  // The 3 laws deep-dive sections
+  'glace-law-double-jeopardy': iceCube,
+  'glace-law-heavy-buyer': capCloseup,
   // Duplication of Purchase slide — pile of ice cubes
   'glace-law-duplication': iceCubes,
   // Page 6 — distinctive brand assets

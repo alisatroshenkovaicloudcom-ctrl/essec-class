@@ -1,7 +1,7 @@
 # glacé — Stay icy.
 
 Interactive website / marketing presentation for **glacé**, a cooling facial moisturiser with SPF 30, launching in Singapore.
-Built with React + Tailwind CSS (Vite). One section per slide of the Canva deck, 12 in total.
+Built with React + Tailwind CSS (Vite). One section per slide of the Canva deck.
 
 ## Run it
 
@@ -17,7 +17,7 @@ npm run build:single   # ONE self-contained HTML file → dist-single/index.html
 ## Presenting
 
 - **→ / PageDown / Space**: next slide · **← / PageUp**: previous slide
-- The counter in the top right shows the current slide (`05 / 12`); the dots on the right (desktop) jump to any slide.
+- The counter in the top right shows the current slide (e.g. `05 / 15`); the dots on the right (desktop) jump to any slide.
 - The top menu jumps to each chapter; on mobile and tablet it becomes a hamburger menu.
 
 ## Replacing images
@@ -29,8 +29,10 @@ Keys set to `null` render a frosted placeholder showing the key name, so it's cl
 | --- | --- | --- |
 | `glace-hero-image` | 1 cover | original image |
 | `singapore-skyline` | 2 | original image |
-| `competitor-evereden`, `competitor-suu-balm`, `competitor-eucerin`, `competitor-laneige` | 3 | **placeholder — add Canva exports** |
+| `competitor-evereden`, `competitor-suu-balm`, `competitor-cerave`, `competitor-laneige` | 3 | original cut-outs |
 | `glace-ice-photo` | 5 | original image |
+| `glace-law-double-jeopardy`, `glace-law-heavy-buyer` | Double Jeopardy, Heavy Buyer Fallacy | reused original images |
+| `glace-law-duplication` | Duplication of Purchase | original image |
 | `glace-wordmark` | 6 | optional — drawn in type until set |
 | `glace-asset-ice-cube`, `glace-asset-product`, `glace-asset-frost` | 6 | original images |
 | `glace-mental-availability` | 7 | original image |
@@ -50,5 +52,6 @@ src/
   data/images.js        image registry (edit this to swap images)
   data/sections.js      section ids, titles and menu labels
   components/           Nav, Reveal (scroll animation), ImageSlot, Decor (drops, snowflakes, condensation, caustics)
-  sections/S01…S12      one file per slide
+  sections/             one file per slide (S05a–c are the three law deep-dives)
+  components/LawSection.jsx  shared layout for the law slides
 ```

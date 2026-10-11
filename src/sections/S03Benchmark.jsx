@@ -1,13 +1,13 @@
-import ImageSlot from '../components/ImageSlot.jsx'
+import { images } from '../data/images.js'
 import Reveal from '../components/Reveal.jsx'
 import { FloatingDrops, SlideTag } from '../components/Decor.jsx'
 
-// Benefits exactly as listed in the presentation — no additional claims.
+// Brands and benefits exactly as on the Canva slide — no additional claims.
 const BRANDS = [
-  { name: 'Evereden', slot: 'competitor-evereden', benefits: ['Cooling', 'Hydration', 'SPF'] },
-  { name: 'Suu Balm', slot: 'competitor-suu-balm', benefits: ['Cooling', 'Moisturisation', 'Itch relief'] },
-  { name: 'Eucerin', slot: 'competitor-eucerin', benefits: ['Oil control', 'SPF'] },
-  { name: 'Laneige', slot: 'competitor-laneige', benefits: ['Lightweight', 'Refreshing hydration'] },
+  { name: 'EVEREDEN', slot: 'competitor-evereden', benefits: ['Cooling', 'Hydration', 'SPF'] },
+  { name: 'SUU BALM', slot: 'competitor-suu-balm', benefits: ['Cooling', 'Moisturization', 'Itch relief'] },
+  { name: 'CeraVe', slot: 'competitor-cerave', benefits: ['Light', 'Oil-free', 'Highly recommended'] },
+  { name: 'LANEIGE', slot: 'competitor-laneige', benefits: ['Lightweight', 'Refreshing hydration'] },
 ]
 
 /* Canva page 3 — four rounded pale-blue competitor cards in a 2×2 grid. */
@@ -18,19 +18,19 @@ export default function S03Benchmark() {
       <div className="relative mx-auto grid max-w-[1400px] gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
         <div className="lg:sticky lg:top-32 lg:self-start">
           <Reveal>
-            <SlideTag id="benchmark">Competitive landscape</SlideTag>
+            <SlideTag id="benchmark">Setup</SlideTag>
           </Reveal>
           <Reveal delay={100} as="h2" className="display mt-8 text-[clamp(52px,6.4vw,104px)]">
             Our Benchmark <em className="italic text-steel">Set</em>
           </Reveal>
           <Reveal delay={200} className="mt-10 space-y-5 body-copy max-w-[440px]">
-            <p>These brands demonstrate that individual benefits such as cooling, hydration, oil control and SPF already exist in the skincare market.</p>
+            <p>These brands demonstrate that individual benefits such as cooling, hydration, oil-free lightness and SPF already exist in the skincare market.</p>
             <p className="font-display text-[26px] font-normal leading-snug text-deep">
               glacé aims to combine these benefits into one lightweight moisturiser designed for hot and humid conditions.
             </p>
           </Reveal>
           <Reveal delay={300} className="mt-10 flex flex-wrap gap-2">
-            {['Cooling', 'Hydration', 'Oil control', 'SPF', 'Lightweight'].map((b) => (
+            {['Cooling', 'Hydration', 'Oil-free', 'SPF', 'Lightweight'].map((b) => (
               <span key={b} className="rounded-full bg-deep px-4 py-2 font-sans text-[12px] uppercase tracking-[0.18em] text-frost">
                 {b}
               </span>
@@ -42,13 +42,22 @@ export default function S03Benchmark() {
         <div className="grid gap-5 sm:grid-cols-2 sm:gap-6">
           {BRANDS.map((b, i) => (
             <Reveal key={b.name} delay={i * 120}>
-              <article className="group card-lift flex h-full flex-col overflow-hidden rounded-[32px] border border-white/80 bg-ice/70 p-3 shadow-[0_20px_50px_-35px_rgba(37,63,102,.5)]">
-                <ImageSlot name={b.slot} alt={`${b.name} product`} className="aspect-[4/3] rounded-[24px]" hint={`${b.name} product photo from Canva page 3`} />
-                <div className="flex flex-1 flex-col px-4 pb-4 pt-6">
-                  <h3 className="font-display text-[34px] font-normal uppercase leading-none tracking-[0.06em] text-deep">{b.name}</h3>
-                  <ul className="mt-5 flex flex-wrap gap-2">
+              <article className="group card-lift flex h-full items-center gap-4 overflow-hidden rounded-[32px] border border-white/80 bg-ice/70 p-5 shadow-[0_20px_50px_-35px_rgba(37,63,102,.5)] sm:flex-col sm:items-stretch sm:p-6 xl:flex-row xl:items-center">
+                {/* product cut-out on a frosted stage */}
+                <div className="relative flex h-44 w-32 shrink-0 items-end justify-center sm:h-52 sm:w-full xl:h-56 xl:w-[42%]" data-image-slot={b.slot}>
+                  <span className="absolute bottom-1 h-6 w-3/4 rounded-[50%] bg-steel/20 blur-md transition-all duration-700 group-hover:w-2/3 group-hover:bg-steel/15" aria-hidden="true" />
+                  <img
+                    src={images[b.slot]}
+                    alt={`${b.name} product`}
+                    loading="lazy"
+                    className="relative max-h-full max-w-full object-contain drop-shadow-[0_14px_18px_rgba(37,63,102,.18)] transition-transform duration-700 ease-out group-hover:-translate-y-2 group-hover:scale-[1.04]"
+                  />
+                </div>
+                <div className="flex-1 text-left sm:text-center xl:text-left">
+                  <h3 className="font-display text-[clamp(28px,2.2vw,36px)] font-normal leading-none tracking-[0.03em] text-deep">{b.name}</h3>
+                  <ul className="mt-4 flex flex-wrap gap-2 sm:justify-center xl:justify-start">
                     {b.benefits.map((x) => (
-                      <li key={x} className="rounded-full border border-steel/30 bg-white/60 px-3.5 py-1.5 font-sans text-[13px] tracking-wide text-deep transition-colors duration-500 group-hover:border-steel/60">
+                      <li key={x} className="rounded-full border border-steel/30 bg-white/60 px-3.5 py-1.5 font-sans text-[13px] uppercase tracking-[0.12em] text-deep transition-colors duration-500 group-hover:border-steel/60">
                         {x}
                       </li>
                     ))}
